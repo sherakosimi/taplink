@@ -6,7 +6,7 @@
     padding: 2rem 0rem;
 
     &__container {
-        margin-top: 10rem;
+        margin-top: 9rem;
         max-width: 1200px;
         width: 90%;
         display: flex;
@@ -24,6 +24,9 @@
     &__wrapper {
         width: 12rem;
         height: 12rem;
+        animation-name: moveInLeft;
+        animation-duration: 0.7s;
+        animation-timing-function: ease-out;
     }
     &__image {
         width: 100%;
@@ -33,16 +36,21 @@
 
     &__heading {
         color: white;
-        letter-spacing: -2px;
         font-family: NAMU;
         font-size: 8rem;
-        line-height: 100%;
+        line-height: 110%;
+        animation-name: moveInLeft;
+        animation-duration: 0.7s;
+        animation-timing-function: ease-out;
     }
 
     &__bio {
         text-align: start;
         margin-top: 2rem;
         display: flex;
+        animation-name: moveInLeft;
+        animation-duration: 0.7s;
+        animation-timing-function: ease-out;
     }
 
     &__paragraph {
@@ -61,6 +69,9 @@
 .grid-container {
     margin-top: 2rem;
     width: 100%;
+    animation-name: moveInUp;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
 }
 
 .cards {
