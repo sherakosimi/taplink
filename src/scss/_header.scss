@@ -1,6 +1,5 @@
 .header {
     width: 100%;
-    //background-color: aliceblue;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -156,9 +155,7 @@
         grid-row-start: span 1;
         -ms-grid-row-span: 1;
         grid-row-end: span 1;
-        background-color: #c13584;
         background-color: #ffffff;
-        //-ms-grid-column: span 2;
     }
 
     &__heading {

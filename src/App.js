@@ -43,7 +43,7 @@ function App() {
                 }
               >
                 <img src={instagram} alt="" className="icon" />
-                <h1 className="card__heading">Мое Instagram</h1>
+                <h1 className="card__heading">Мой Instagram</h1>
               </div>
               <div
                 className="card card--facebook"
