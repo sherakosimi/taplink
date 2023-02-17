@@ -60,7 +60,7 @@ function App() {
               >
                 <img src={telegram} alt="" className="icon" />
                 <h1 className="card__heading card__heading--tg">
-                  Мое Telegram
+                  Мой Telegram
                 </h1>
               </div>
               <div
