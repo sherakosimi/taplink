@@ -1,0 +1,47 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // This defines what 1rem is
+    font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+    background: black;
+    overflow: hidden;
+    background-color: #111111;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    @include respond(big-desktop) {
+        font-size: 75%;
+    }
+
+    @include respond(tab-land) {
+        font-size: 56.25%;
+    }
+    @include respond(tab-port) {
+        font-size: 40%;
+    }
+    @include respond(phone) {
+        font-size: 35%;
+    }
+}
+
+body {
+    //background-color: antiquewhite;
+    min-height: 100vh;
+    //font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    padding: 2rem;
+
+    @include respond(phone) {
+        padding: 1.4rem;
+    }
+}
+
+::selection {
+    background-color: rgb(49, 49, 49);
+    color: black;
+}

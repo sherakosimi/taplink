@@ -1,0 +1,184 @@
+.header {
+    width: 100%;
+    //background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 0rem;
+
+    &__container {
+        margin-top: 10rem;
+        max-width: 1200px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 2.4rem 2.4rem;
+        gap: 2rem;
+
+        @include respond(phone) {
+            width: 100%;
+            padding: 2rem 1.3rem;
+        }
+    }
+    &__wrapper {
+        width: 12rem;
+        height: 12rem;
+    }
+    &__image {
+        width: 100%;
+        height: 100%;
+        border-radius: 100px;
+    }
+
+    &__heading {
+        color: white;
+        letter-spacing: -2px;
+        font-family: NAMU;
+        font-size: 8rem;
+        line-height: 100%;
+    }
+
+    &__bio {
+        text-align: start;
+        margin-top: 2rem;
+        display: flex;
+    }
+
+    &__paragraph {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        color: white;
+        font-style: normal;
+        font-family: "Roboto", sans-serif;
+        font-size: 2.3rem;
+        line-height: 150%;
+    }
+}
+
+.grid-container {
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.cards {
+    cursor: pointer;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    grid-template-areas: ".";
+    -ms-grid-columns: 1fr 24px 1fr 24px 1fr;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr;
+    -ms-grid-rows: auto 24px auto;
+    grid-template-rows: auto auto;
+
+    @include respond(tab-port) {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        -ms-grid-rows: auto 24px auto;
+        grid-template-rows: auto auto;
+    }
+}
+
+.card {
+    border-radius: 20px;
+    height: 23rem;
+    padding: 2.2rem 2.2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    transition: all 0.5s;
+
+    &--behancer {
+        background-color: #1769ff;
+        -ms-grid-column: span 2;
+        grid-column-start: span 2;
+        -ms-grid-column-span: 2;
+        grid-column-end: span 2;
+        -ms-grid-row: span 1;
+        grid-row-start: span 1;
+        -ms-grid-row-span: 1;
+        grid-row-end: span 1;
+    }
+
+    &--instagram {
+        grid-column-start: span 2;
+        -ms-grid-column-span: 2;
+        grid-column-end: span 2;
+        -ms-grid-row: span 1;
+        grid-row-start: span 1;
+        -ms-grid-row-span: 1;
+        grid-row-end: span 1;
+        background-color: #c13584;
+    }
+
+    &--facebook {
+        background-color: #1643a3;
+        @include respond(tab-port) {
+            -ms-grid-column: span 2;
+            grid-column-start: span 2;
+            -ms-grid-column-span: 2;
+            grid-column-end: span 2;
+            -ms-grid-row: span 1;
+            grid-row-start: span 1;
+            -ms-grid-row-span: 1;
+            grid-row-end: span 1;
+        }
+    }
+
+    &--email {
+        border: 3px solid #ffffff;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 6rem;
+        @include respond(tab-port) {
+            -ms-grid-column: span 2;
+            grid-column-start: span 2;
+            -ms-grid-column-span: 2;
+            grid-column-end: span 2;
+            -ms-grid-row: span 1;
+            grid-row-start: span 1;
+            -ms-grid-row-span: 1;
+            grid-row-end: span 1;
+        }
+    }
+
+    &--telegram {
+        grid-column-start: span 2;
+        -ms-grid-column-span: 2;
+        grid-column-end: span 2;
+        -ms-grid-row: span 1;
+        grid-row-start: span 1;
+        -ms-grid-row-span: 1;
+        grid-row-end: span 1;
+        background-color: #c13584;
+        background-color: #ffffff;
+        //-ms-grid-column: span 2;
+    }
+
+    &__heading {
+        margin-left: 1.3rem;
+        margin-bottom: 1.3rem;
+        color: white;
+        font-family: NAMU;
+        font-size: 2.4rem;
+
+        &--tg {
+            color: #26a4e2;
+        }
+    }
+
+    &:hover {
+        transform: scale(1.03);
+    }
+}
+
+.icon {
+    width: 7.6rem;
+    height: 7.6rem;
+}
