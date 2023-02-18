@@ -68,6 +68,9 @@ function App() {
                 onClick={() => window.open("mailto:sohib.dsgn@gmail.com")}
               >
                 <i className="bx bx-envelope"></i>
+                <h1 className="card__heading card__heading--email">
+                  Моя почта
+                </h1>
               </div>
             </div>
           </div>
