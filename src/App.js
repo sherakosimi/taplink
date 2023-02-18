@@ -1,9 +1,9 @@
 import "./css/App.css";
 import portrait from "./img/sohib.jfif";
-import behancer from "./img/bhnc.png";
-import instagram from "./img/inst.png";
-import facebook from "./img/fb.png";
-import telegram from "./img/telegram.png";
+import behancer from "./img/bhnc.svg";
+import instagram from "./img/inst.svg";
+import facebook from "./img/fb.svg";
+import telegram from "./img/telegram.svg";
 
 function App() {
   return (
